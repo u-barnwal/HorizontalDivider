@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <declare-styleable name="HorizontalDivider">
+    <attr name="title" value="text" />
+    <attr name="position">
+      <flag name="left" value="1" />
+      <flag name="center" value="2" />
+      <flag name="right" value="3" />
+    </attr>
+  </declare-styleable>
+
+</resources>
