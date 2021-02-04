@@ -1,0 +1,3 @@
+include ':HorizontalDivider'
+include ':app'
+rootProject.name = "HorizontalDividerLibrary"
