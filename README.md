@@ -1,11 +1,9 @@
 [![](https://jitpack.io/v/u-barnwal/HorizontalDivider.svg)](https://jitpack.io/#u-barnwal/HorizontalDivider)
 # HorizontalDivider
-
-About
 UI Component. Simple horizontal divider with title for android.
 
 ## Sample
-<img  src="./samples/preview1.gif"  height="500">
+<img  src="./samples/preview1.png">
 
 ## Implementation
 **Step 1:** Add to project level build.gradle
@@ -20,44 +18,29 @@ UI Component. Simple horizontal divider with title for android.
 **Step 2:** Add to app level build.gradle
 
 	dependencies {
-        implementation 'androidx.gridlayout:gridlayout:1.0.0' // GridLayout
 	    implementation 'com.github.u-barnwal:HorizontalDivider:VERSION'
 	}
 ## How to use
-**Step 1:** Create view
+**Create view**
 
-    <com.isolpro.library.rearranginggridlayout.RearrangingGridLayout  
-	  android:layout_width="match_parent"  
-	  android:layout_height="wrap_content"  
-	  app:columnCount="2">  
-	  ...
-	</com.isolpro.library.rearranginggridlayout.RearrangingGridLayout>
-**Step 2:** Save all the children of the GridLayout after it is bound (rendered), like below
+    <com.isolpro.library.horizontaldivider.HorizontalDivider
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:title="Center"
+      app:position="Center" />
 
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-	    super.onCreate(savedInstanceState);
-	    setContentView(R.layout.activity_home);
 
-	    RearrangingGridLayout rglPrices = findViewById(R.id.rglPrices);
-	    
-	    rglPrices.saveViews();
-	}
-**Step 3:** To hide a child view
-
-    rglPrices.hideViewAtIndex(indexOfView);
-
-**Step 2:** To show a child view
-
-    rglPrices.showViewAtIndex(indexOfView);
+|Position|Value
+|---|---|
+|LEFT|left|
+|RIGHT|right|
 
 ## Features
 
- - Doesn't show empty space for hidden element
- - Maintains original view order
- - Doesn't re-render any view
- - Super fast
+ - Fully adaptive
+ - Lightweight
 
 ## Links
- - More info: https://stackoverflow.com/a/65402196/4437468
- - Live example: https://pricelistlite.isolpro.in
+ - Live example
+   - https://pricelistlite.isolpro.in
+    - https://transactionslistlite.isolpro.in
